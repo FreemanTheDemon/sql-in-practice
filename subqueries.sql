@@ -11,7 +11,7 @@ WHERE playlist_id IN (SELECT playlist_id FROM playlist
 
 -- Get all track names for playlist_id 5.
 SELECT name FROM track
-WHERE track_id in (SELECT track_id FROM playlist_track
+WHERE track_id IN (SELECT track_id FROM playlist_track
     WHERE playlist_id = 5);
 
 -- Get all tracks where the genre is Comedy.
